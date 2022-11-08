@@ -1,0 +1,14 @@
+.navbar {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ebebeb;
+  .logo-container {
+    display: flex;
+    justify-content: left;
+    padding: 25px;
+    .logo {
+      width: 150px;
+    }
+  }
+}
