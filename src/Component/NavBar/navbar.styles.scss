@@ -1,6 +1,7 @@
 .navbar {
   height: 70px;
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
   background-color: white;
   border-bottom: 1px solid #ebebeb;
   .logo-container {
@@ -10,5 +11,12 @@
     .logo {
       width: 150px;
     }
+  }
+  .midTab {
+    height: 45px;
+    margin-top: 7px;
+    border: 1px solid #ebebeb;
+    border-radius: 2em;
+    padding: 0 10px;
   }
 }

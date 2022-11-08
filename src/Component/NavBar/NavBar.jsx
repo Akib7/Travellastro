@@ -12,6 +12,10 @@ const NavBar = () => {
       <Link className="logo-container" to="/">
         <img className="logo" src={logo} alt="Travellastro" />
       </Link>
+
+      <div className="midTab">
+        <p className="para">Anywhere | Any Week | Add Guest</p>
+      </div>
     </div>
   );
 };
