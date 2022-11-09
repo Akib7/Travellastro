@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { CssBaseline } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
-import { NavBar, Places } from ".";
+import { NavBar, PlaceList } from ".";
 import "./App.css";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         <div className="toolbar" />
 
         <Routes>
-          <Route path="/" exact element={<Places />}></Route>
+          <Route path="/" exact element={<PlaceList />}></Route>
         </Routes>
       </main>
     </div>
