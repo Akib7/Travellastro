@@ -49,6 +49,7 @@ const NavBar = () => {
               height: "40px",
               marginTop: "7px",
               color: "#717171",
+              border: "1px solid #dddddd",
             }}
           >
             <MenuIcon />
