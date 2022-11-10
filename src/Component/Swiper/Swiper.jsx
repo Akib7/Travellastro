@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import PLACE_LIST from "../PlaceList/placeList.data";
 import SWIPER_DATA from "./swiper.data";
 
 // Import Swiper styles
@@ -12,13 +13,19 @@ import "./styles.css";
 // import required modules
 import { Navigation } from "swiper";
 
-const SwiperData = () => {
+const SwiperData = ({ swiperImages }) => {
   return (
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        {SWIPER_DATA.map(({ image, alt }) => (
+        {swiperImages.map(({ image, alt }) => (
           <SwiperSlide>{<img src={image} alt={alt} />}</SwiperSlide>
         ))}
+
+        {/* {PLACE_LIST.map((el) =>
+          el.swiperImages.map(({ image, alt }) => (
+            <SwiperSlide>{<img src={image} alt={alt} />}</SwiperSlide>
+          ))
+        )} */}
 
         {/* <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
