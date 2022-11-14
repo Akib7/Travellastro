@@ -3,20 +3,30 @@
   display: flex;
   align-items: center;
   padding: 100px 10px 130px 30px;
+
   justify-content: space-between;
+
+  .links {
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
   // margin-bottom: 20px;
   .placeContainer {
-    height: 260px;
+    height: 230px;
     width: 290px;
     border-radius: 18px;
+    // max-width: 90%;
 
     .downwardTexts {
       justify-content: space-between;
     }
 
     .image {
-      height: 280px;
-      width: 300px;
+      height: 270px;
+      width: 290px;
       border-radius: 18px;
     }
   }
