@@ -1,4 +1,32 @@
-.detail {
-  padding: 20px;
-  font-size: 50px;
+.detailPage {
+  max-width: 90%;
+  margin: auto 2%;
+  padding: 80px 0px 15px 70px;
+
+  .detail {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+  }
+  .rating-and-btns {
+    display: flex;
+    justify-content: space-between;
+
+    .rating-details {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+
+      .rating {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .link {
+      color: black;
+
+      font-weight: 500;
+    }
+  }
 }
