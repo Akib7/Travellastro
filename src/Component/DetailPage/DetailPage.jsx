@@ -1,19 +1,19 @@
 import React from "react";
 import { Button, Grid, Typography } from "@mui/material";
+import { PictureContainer } from "..";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import PLACE_LIST from "../PlaceList/placeList.data";
 import { Link } from "react-router-dom";
 
 import "./DetailPage.styles.scss";
 
-const DetailPage = () => {
+const DetailPage = ({ name, rating, swiperImages }) => {
   return (
     <div className="detailPage">
       <Grid container className="detail">
-        <Typography variant="h5">
-          Aura House 2bds Eco Bamboo House, Pool, River View
-        </Typography>
+        <Typography variant="h5">{name}</Typography>
       </Grid>
       <Grid item className="rating-and-btns">
         <Grid item className="rating-details">
@@ -89,6 +89,12 @@ const DetailPage = () => {
             </Button>
           </Link>
         </Grid>
+      </Grid>
+
+      <Grid item className="pictures">
+        {PLACE_LIST.map(({ id, ...otherProps }) => (
+          <PictureContainer key={id} {...otherProps} />
+        ))}
       </Grid>
     </div>
   );
