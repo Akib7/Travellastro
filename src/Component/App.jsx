@@ -14,7 +14,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" exact element={<PlaceList />} />
-          <Route path="/detail" component={<OverallDetailPage />} />
+          <Route path="/detail" element={<OverallDetailPage />} />
         </Routes>
       </main>
     </div>
