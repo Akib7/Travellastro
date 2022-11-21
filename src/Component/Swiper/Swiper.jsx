@@ -13,12 +13,12 @@ import "./styles.css";
 // import required modules
 import { Navigation } from "swiper";
 
-const SwiperData = ({ swiperImages }) => {
+const SwiperData = ({ id, swiperImages }) => {
   return (
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         {swiperImages.map(({ image, alt }) => (
-          <SwiperSlide>{<img src={image} alt={alt} />}</SwiperSlide>
+          <SwiperSlide>{<img key={id} src={image} alt={alt} />}</SwiperSlide>
         ))}
 
         {/* {PLACE_LIST.map((el) =>

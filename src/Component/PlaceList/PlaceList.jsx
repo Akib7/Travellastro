@@ -8,8 +8,8 @@ import "./PlaceList.styles.scss";
 const PlaceList = () => {
   return (
     <Grid container className="place-container">
-      {PLACE_LIST.map(({ id, ...otherProps }) => (
-        <Places key={id} {...otherProps} />
+      {PLACE_LIST.map((place) => (
+        <Places key={place.id} place={place} />
       ))}
     </Grid>
   );

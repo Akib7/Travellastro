@@ -5,21 +5,13 @@ import StarRateIcon from "@mui/icons-material/StarRate";
 
 import "./Places.styles.scss";
 import SwiperData from "../Swiper/Swiper";
-const Places = ({
-  name,
-  imageUrl,
-  kilo,
-  date,
-  price,
-  time,
-  rating,
-  swiperImages,
-}) => {
+const Places = ({ place }) => {
+  const { name, id, kilo, date, price, time, rating, swiperImages } = place;
   return (
     <div className="container">
-      <Link className="links" to={"/detail"}>
+      <Link className="links" to={`/detail/${id}`}>
         <Grid container className="placeContainer">
-          <SwiperData swiperImages={swiperImages} />
+          <SwiperData id={swiperImages.id} swiperImages={swiperImages} />
           {/* <img src={imageUrl} alt="places" className="image" /> */}
           <Grid container item className="downwardTexts">
             <Grid item>

@@ -14,7 +14,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" exact element={<PlaceList />} />
-          <Route path="/detail" element={<OverallDetailPage />} />
+          <Route path="/detail/:id" element={<OverallDetailPage />} />
         </Routes>
       </main>
     </div>
