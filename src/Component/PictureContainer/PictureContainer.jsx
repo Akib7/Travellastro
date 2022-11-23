@@ -1,11 +1,11 @@
 import { Grid } from "@mui/material";
 import React from "react";
 
-const PictureContainer = () => {
+const PictureContainer = ({ image }) => {
   return (
     <Grid container className="picture-container">
       <div className="feature-image">
-        <img src="" />
+        <img src={image} />
       </div>
     </Grid>
   );

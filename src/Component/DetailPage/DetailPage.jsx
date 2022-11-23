@@ -23,7 +23,7 @@ const DetailPage = ({ name, rating, swiperImages }) => {
             style={{ fontSize: "14px", paddingRight: "10px" }}
           >
             {<StarRateIcon style={{ height: "16px" }} />}
-            5.0
+            {rating}
           </Typography>
           <Link to={"/"} className="link">
             3 Reviews
@@ -91,8 +91,8 @@ const DetailPage = ({ name, rating, swiperImages }) => {
         </Grid>
       </Grid>
 
-      <Grid item className="pictures">
-        {PLACE_LIST.map(({ id, ...otherProps }) => (
+      <Grid container className="pictures">
+        {swiperImages.map(({ id, ...otherProps }) => (
           <PictureContainer key={id} {...otherProps} />
         ))}
       </Grid>
