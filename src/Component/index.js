@@ -4,3 +4,4 @@ export { default as PlaceList } from "./PlaceList/PlaceList";
 export { default as DetailPage } from "./DetailPage/DetailPage";
 export { default as OverallDetailPage } from "./OverallDetailPage/OverallDetailPage";
 export { default as PictureContainer } from "./PictureContainer/PictureContainer";
+export { default as Location } from "./Location/Location";

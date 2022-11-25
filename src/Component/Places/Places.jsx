@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import StarRateIcon from "@mui/icons-material/StarRate";
-
+import { Location } from "..";
 import "./Places.styles.scss";
 import SwiperData from "../Swiper/Swiper";
 const Places = ({ place }) => {
@@ -29,18 +29,9 @@ const Places = ({ place }) => {
             <Typography variant="body2" style={{ color: "#717171" }}>
               {price}
             </Typography>
-            <Typography variant="body2" style={{ color: "#717171" }}>
-              {price}
-            </Typography>
-            <Typography variant="body2">
-              <p>
-                <b>{price}</b> {price}
-              </p>
-            </Typography>
           </Grid>
           <Typography variant="subtitle1" style={{ fontSize: "12px" }}>
-            {<StarRateIcon style={{ height: "15px" }} />}
-            {price}
+            -{discount}%
           </Typography>
         </Grid>
       </Grid>
