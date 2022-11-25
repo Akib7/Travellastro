@@ -9,7 +9,7 @@ const PlaceList = () => {
   return (
     <Grid container className="place-container">
       {PLACE_LIST.map((place) => (
-        <Places key={place.id} place={place} />
+        <Places key={place._id} place={place} />
       ))}
     </Grid>
   );

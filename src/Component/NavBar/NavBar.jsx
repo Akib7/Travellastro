@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Button, IconButton } from "@mui/material";
+import { AppBar, Button, Divider, IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -13,34 +13,7 @@ const NavBar = () => {
     "https://fontmeme.com/permalink/221108/dce6c1a90373d92c835ccf5163407ad0.png";
   return (
     <div className="navbar">
-      <Link className="logo-container" to="/">
-        <img className="logo" src={logo} alt="Travellastro" />
-      </Link>
-
-      <div className="midTab">
-        <Button
-          className="para"
-          style={{ display: "flex", paddingTop: "10px", color: "black" }}
-        >
-          Anywhere | Any Week | Add Guest{" "}
-          {<SearchIcon style={{ color: "#FF385C" }} />}
-        </Button>
-      </div>
-
-      <div className="host">
-        <Button
-          variant="secondary"
-          style={{
-            borderRadius: "30px",
-          }}
-        >
-          Become a Host
-        </Button>
-        <IconButton aria-label="language">
-          <LanguageIcon />
-        </IconButton>
-      </div>
-
+      shopcart
       <div className="lastIconsContainer">
         <div className="lastIcons">
           <Button
@@ -52,8 +25,8 @@ const NavBar = () => {
               border: "1px solid #dddddd",
             }}
           >
-            <MenuIcon />
             <AccountCircleIcon />
+            <b>sign in</b>
           </Button>
         </div>
       </div>

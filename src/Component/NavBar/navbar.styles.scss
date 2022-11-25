@@ -2,6 +2,7 @@
   // height: 70px;
   width: 100%;
   top: 0;
+
   display: flex;
   z-index: 1000;
   background-color: #fff;
@@ -10,20 +11,7 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #ebebeb;
-  .logo-container {
-    display: flex;
-    justify-content: left;
-    padding: 25px;
-    .logo {
-      width: 150px;
-    }
-  }
-  .midTab {
-    height: 45px;
-    border: 1px solid #dddddd;
-    border-radius: 2em;
-    padding: 0 10px;
-  }
+  // border-bottom-width: 80px;
 
   .host {
     display: flex;
