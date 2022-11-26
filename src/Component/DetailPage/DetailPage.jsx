@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import "./DetailPage.styles.scss";
 
 const DetailPage = ({ name, rating, swiperImages }) => {
+  console.log(swiperImages.length);
   return (
     <div className="detailPage">
       <Grid container className="detail">
@@ -91,16 +92,21 @@ const DetailPage = ({ name, rating, swiperImages }) => {
         </Grid>
       </Grid>
 
-      <Grid item className="pictures">
+      <Grid container className="detail-image">
         <Grid item className="feature-image">
-          <PictureContainer
-            image={swiperImages[0].image}
+          <img
+            src={swiperImages[0].image}
             alt={swiperImages[0].alt}
+            className="image"
           />
         </Grid>
-        {swiperImages.map(({ id, ...otherProps }) => (
-          <PictureContainer key={id} {...otherProps} />
-        ))}
+        <Grid container className="four">
+          <Grid item className="pictures">
+            {swiperImages.map(({ id, ...otherProps }) => (
+              <PictureContainer key={id} {...otherProps} />
+            ))}
+          </Grid>
+        </Grid>
       </Grid>
     </div>
   );

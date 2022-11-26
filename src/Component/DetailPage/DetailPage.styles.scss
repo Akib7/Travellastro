@@ -29,16 +29,32 @@
       font-weight: 500;
     }
   }
-  .pictures {
-    // height: 70px;
+
+  .detail-image {
     display: flex;
-    width: 100%;
-    // max-width: inherit;
-    padding-top: 24px;
+    justify-content: start;
+    // width: 50%;
+
     .feature-image {
-      display: flex;
-      height: 250px;
-      width: 1050px;
+      padding: 30px 5px 0 0;
+
+      .image {
+        border-radius: 20px 0 0 20px;
+        height: 360px;
+        width: 560px;
+      }
+    }
+
+    .four {
+      display: inline;
+      justify-content: space-around;
+      height: 340px;
+      width: 560px;
+      .pictures {
+        display: flex;
+        height: 250px;
+        width: 500px;
+      }
     }
   }
 }
