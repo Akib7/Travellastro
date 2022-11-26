@@ -30,6 +30,15 @@
     }
   }
   .pictures {
-    height: 70px;
+    // height: 70px;
+    display: flex;
+    width: 100%;
+    // max-width: inherit;
+    padding-top: 24px;
+    .feature-image {
+      display: flex;
+      height: 250px;
+      width: 1050px;
+    }
   }
 }

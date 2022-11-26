@@ -1,0 +1,15 @@
+.picture-container {
+  // padding-top: 24px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  // width: 775px;
+  justify-content: space-between;
+
+  .image {
+    border-radius: 20px 0 0 20px;
+    height: 200px;
+    width: 280px;
+    padding: 5px;
+  }
+}

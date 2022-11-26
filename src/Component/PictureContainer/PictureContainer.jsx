@@ -1,13 +1,13 @@
-import { Grid } from "@mui/material";
 import React from "react";
+import { Grid } from "@mui/material";
 
-const PictureContainer = ({ image }) => {
+import "./PictureContainer.styles.scss";
+
+const PictureContainer = ({ image, alt }) => {
   return (
-    <Grid container className="picture-container">
-      <div className="feature-image">
-        <img src={image} />
-      </div>
-    </Grid>
+    <div className="picture-container">
+      <img src={image} alt={alt} className="image" />
+    </div>
   );
 };
 

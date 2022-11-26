@@ -91,7 +91,13 @@ const DetailPage = ({ name, rating, swiperImages }) => {
         </Grid>
       </Grid>
 
-      <Grid container className="pictures">
+      <Grid item className="pictures">
+        <Grid item className="feature-image">
+          <PictureContainer
+            image={swiperImages[0].image}
+            alt={swiperImages[0].alt}
+          />
+        </Grid>
         {swiperImages.map(({ id, ...otherProps }) => (
           <PictureContainer key={id} {...otherProps} />
         ))}
