@@ -10,7 +10,8 @@ import { Link } from "react-router-dom";
 import "./DetailPage.styles.scss";
 
 const DetailPage = ({ name, rating, swiperImages }) => {
-  console.log(swiperImages.length);
+  console.log(swiperImages[0].id);
+
   return (
     <div className="detailPage">
       <Grid container className="detail">
@@ -102,9 +103,13 @@ const DetailPage = ({ name, rating, swiperImages }) => {
         </Grid>
         <Grid container className="four">
           <Grid item className="pictures">
-            {swiperImages.map(({ id, ...otherProps }) => (
-              <PictureContainer key={id} {...otherProps} />
-            ))}
+            {swiperImages.map(({ id, ...otherProps }) =>
+              id > 1 && id < 6 ? (
+                <PictureContainer key={id} {...otherProps} />
+              ) : (
+                ""
+              )
+            )}
           </Grid>
         </Grid>
       </Grid>
