@@ -1,6 +1,4 @@
 import React from "react";
-import { Grid } from "@mui/material";
-
 import "./PictureContainer.styles.scss";
 
 const PictureContainer = ({ image, alt }) => {

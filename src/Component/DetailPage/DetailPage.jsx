@@ -104,7 +104,16 @@ const DetailPage = ({ name, rating, swiperImages }) => {
         <Grid container className="four">
           <Grid item className="pictures">
             {swiperImages.map(({ id, ...otherProps }) =>
-              id > 1 && id < 6 ? (
+              id > 1 && id < 4 ? (
+                <PictureContainer key={id} {...otherProps} />
+              ) : (
+                ""
+              )
+            )}
+          </Grid>
+          <Grid item className="pictures">
+            {swiperImages.map(({ id, ...otherProps }) =>
+              id > 3 && id < 6 ? (
                 <PictureContainer key={id} {...otherProps} />
               ) : (
                 ""
