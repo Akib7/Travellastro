@@ -40,6 +40,7 @@
       padding: 30px 5px 0 0;
 
       .image {
+        cursor: pointer;
         border-radius: 20px 0 0 20px;
         height: 360px;
         width: 560px;
@@ -61,6 +62,21 @@
         height: 185px;
         width: 500px;
       }
+    }
+
+    .image-btn {
+      cursor: pointer;
+      // margin: 5px 0;
+      bottom: 23%;
+      background-color: white;
+      border-radius: 10px;
+      text-transform: lowercase;
+
+      left: 78%;
+      position: absolute;
+    }
+    .image-btn::first-letter {
+      text-transform: uppercase;
     }
   }
 }

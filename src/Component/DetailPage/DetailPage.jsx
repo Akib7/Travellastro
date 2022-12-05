@@ -3,6 +3,7 @@ import { Button, Grid, Typography } from "@mui/material";
 import { PictureContainer } from "..";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import IosShareIcon from "@mui/icons-material/IosShare";
+import GrainOutlinedIcon from "@mui/icons-material/GrainOutlined";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PLACE_LIST from "../PlaceList/placeList.data";
 import { Link } from "react-router-dom";
@@ -125,12 +126,14 @@ const DetailPage = ({ name, rating, swiperImages }) => {
         <Button
           className="image-btn"
           style={{
-            display: "flex",
-            paddingTop: "10px",
+            // display: "flex",
+            // paddingTop: "10px",
+
             color: "black",
-            border: "1px solid #dddddd",
+            border: "1px solid black",
           }}
         >
+          <GrainOutlinedIcon style={{ paddingRight: "5px" }} />
           Show All Images
         </Button>
       </Grid>
