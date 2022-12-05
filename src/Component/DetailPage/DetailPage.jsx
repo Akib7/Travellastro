@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import "./DetailPage.styles.scss";
 
 const DetailPage = ({ name, rating, swiperImages }) => {
-  console.log(swiperImages[0].id);
+  console.log(swiperImages[1].id);
 
   return (
     <div className="detailPage">
