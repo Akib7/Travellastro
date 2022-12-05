@@ -12,4 +12,8 @@
     width: 292px;
     padding: 5px;
   }
+
+  .image:hover {
+    filter: brightness(0.85);
+  }
 }

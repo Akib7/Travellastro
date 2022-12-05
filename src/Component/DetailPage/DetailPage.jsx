@@ -121,6 +121,18 @@ const DetailPage = ({ name, rating, swiperImages }) => {
             )}
           </Grid>
         </Grid>
+
+        <Button
+          className="image-btn"
+          style={{
+            display: "flex",
+            paddingTop: "10px",
+            color: "black",
+            border: "1px solid #dddddd",
+          }}
+        >
+          Show All Images
+        </Button>
       </Grid>
     </div>
   );

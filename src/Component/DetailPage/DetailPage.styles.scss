@@ -44,6 +44,10 @@
         height: 360px;
         width: 560px;
       }
+
+      .image:hover {
+        filter: brightness(0.85);
+      }
     }
 
     .four {
